@@ -45,6 +45,7 @@ syntax match hsNiceOperator "\<pi\>" conceal cchar=π
 syntax match hsNiceOperator "==" conceal cchar=≡
 syntax match hsNiceOperator "\/=" conceal cchar=≠
 syntax match hsNiceOperator ">>" conceal cchar=»
+syntax match hsNiceOperator "<<" conceal cchar=«
 
 let s:extraConceal = 1
 " Some windows font don't support some of the characters,
@@ -71,7 +72,6 @@ if s:extraConceal
     syntax match hsNiceOperator ">=\ze[^>]" conceal cchar=≥
 
     syntax match hsNiceOperator "=>" conceal cchar=⇒
-    syntax match hsNiceOperator "<<" conceal cchar=«
 
     " Redfining to get proper '::' concealing
     syntax match hs_DeclareFunction /^[a-z_(]\S*\(\s\|\n\)*::/me=e-2 nextgroup=hsNiceOperator contains=hs_FunctionName,hs_OpFunctionName
