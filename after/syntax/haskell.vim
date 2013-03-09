@@ -101,6 +101,8 @@ if s:extraConceal
 
     syntax match hsNiceOperator "`elem`" conceal cchar=∈
     syntax match hsNiceOperator "`notElem`" conceal cchar=∉
+    syntax match hsNiceOperator "\<elem\>" conceal cchar=∈
+    syntax match hsNiceOperator "\<notElem\>" conceal cchar=∉
 endif
 
 hi link hsNiceOperator Operator
