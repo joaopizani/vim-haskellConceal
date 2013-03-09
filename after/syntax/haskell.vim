@@ -90,6 +90,7 @@ if s:extraConceal
     syntax match hsNiceOperator " \zs\*\ze " conceal cchar=⋅
     syntax match hsNiceOperator " \zs\/\ze " conceal cchar=÷
     syntax match hsNiceOperator "\<Integer\>" conceal cchar=ℤ
+    syntax match hsNiceOperator "=\@<=<<" conceal cchar=≪
     " the star does not seem so good...
     " syntax match hsNiceOperator "*" conceal cchar=★
 
