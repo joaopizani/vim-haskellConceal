@@ -83,6 +83,7 @@ if s:extraConceal
     syntax match hsNiceOperator ">-" conceal cchar=↣
     syntax match hsNiceOperator "-<<" conceal cchar=⤛
     syntax match hsNiceOperator ">>-" conceal cchar=⤜
+    syntax match hsNiceOperator "()" conceal cchar=∅
     " the star does not seem so good...
     " syntax match hsNiceOperator "*" conceal cchar=★
 
