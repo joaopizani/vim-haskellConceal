@@ -100,6 +100,41 @@ if s:extraConceal
     syntax match hsNiceOperator "`notElem`" conceal cchar=∉
     syntax match hsNiceOperator "\<elem\>" conceal cchar=∈
     syntax match hsNiceOperator "\<notElem\>" conceal cchar=∉
+
+    syntax match hsNiceOperator "`member`" conceal cchar=∈
+    syntax match hsNiceOperator "`notMember`" conceal cchar=∉
+    syntax match hsNiceOperator "\<member\>" conceal cchar=∈
+    syntax match hsNiceOperator "\<notMember\>" conceal cchar=∉
+
+    syntax match hsNiceOperator "`M.member`" conceal cchar=∈
+    syntax match hsNiceOperator "`M.notMember`" conceal cchar=∉
+    syntax match hsNiceOperator "\<M.member\>" conceal cchar=∈
+    syntax match hsNiceOperator "\<M.notMember\>" conceal cchar=∉
+
+    syntax match hsNiceOperator "`S.member`" conceal cchar=∈
+    syntax match hsNiceOperator "`S.notMember`" conceal cchar=∉
+    syntax match hsNiceOperator "\<S.member\>" conceal cchar=∈
+    syntax match hsNiceOperator "\<S.notMember\>" conceal cchar=∉
+
+    syntax match hsNiceOperator "`isSubsetOf`" conceal cchar=⊆
+    syntax match hsNiceOperator "\<isSubsetOf\>" conceal cchar=⊆
+    syntax match hsNiceOperator "`S.isSubsetOf`" conceal cchar=⊆
+    syntax match hsNiceOperator "\<S.isSubsetOf\>" conceal cchar=⊆
+
+    syntax match hsNiceOperator "`union`" conceal cchar=∪
+    syntax match hsNiceOperator "\<union\>" conceal cchar=∪
+    syntax match hsNiceOperator "`S.union`" conceal cchar=∪
+    syntax match hsNiceOperator "\<S.union\>" conceal cchar=∪
+
+    syntax match hsNiceOperator "`intersection`" conceal cchar=∩
+    syntax match hsNiceOperator "\<intersection\>" conceal cchar=∩
+    syntax match hsNiceOperator "`S.intersection`" conceal cchar=∩
+    syntax match hsNiceOperator "\<S.intersection\>" conceal cchar=∩
+
+    syntax match hsNiceOperator "`difference`" conceal cchar=−
+    syntax match hsNiceOperator "\<difference\>" conceal cchar=−
+    syntax match hsNiceOperator "`S.difference`" conceal cchar=−
+    syntax match hsNiceOperator "\<S.difference\>" conceal cchar=−
 endif
 
 hi link hsNiceOperator Operator
